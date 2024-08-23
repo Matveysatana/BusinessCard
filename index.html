@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buisness card</title>
+    <link rel="stylesheet" href="./Styles/reset.css">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Сатановский Матвей Витальевич</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img class="header__backgraund" src="./images/Фон-для-сайта3.jpg" alt="backgraund">
+        <div class="header__backgraund-wrapper"></div>
         <div class="header-top">
-            <span class="logo">Woydock</span>
+            <a href="" class="logo">Матвей Сатановский</a>
             <nav class="navigation">
                 <ul class="menu">
                     <li class="element-menu">
-                        <a class="element-menu__link" href="">Home</a>
+                        <a class="element-menu__link active" href="">Home</a>
                     </li>
                     <li class="element-menu">
                         <a class="element-menu__link" href="">About me</a>
@@ -38,14 +42,16 @@
         </div>
 
         <div class="header-center">
-            <h1 class="name">Сатановский Матвей</h1>
-            <p class="description">Привет! Меня зовут Матвей, я веб-разработчик</p>
+            <div class="header-center__wrapper">
+                <h1 class="name">Сатановский&nbsp;Матвей</h1>
+                <p class="description">Привет! Меня зовут Матвей, я веб-разработчик, познакомимся?)</p>
+            </div>
         </div>
     </header>
 
     <section class="about-me">
         <div class="left">
-            <img src="Лучший_Мужчина.jpg" alt="Фотка автора">
+            <img src="./images/Лучший_Мужчина.jpg" alt="Фотка автора">
         </div>
         <div class="right">
             <h2 class="about-me__title">Сатановский Матвей Витальевич</h2>
@@ -162,6 +168,7 @@
             <p class="interest-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat pariatur, a molestias magnam inventore, eos tempora aspernatur, quidem ipsa facere totam et soluta possimus nam voluptate commodi laborum alias.</p>
         </div>
     </section>
+
     <section class="books">
         <h2 class="second-title">Прочитанные книги</h2>
 
@@ -198,11 +205,6 @@
 
 
     </secton>
-
-
-
-
-
 
     <footer class="footer">
         <ul class="social">
