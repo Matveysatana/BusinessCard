@@ -1,7 +1,7 @@
 
 /* Переменные */
 :root {
-    --color-blue: rgb(65, 129, 224);
+    --color-blue: rgb(86, 147, 238);
     --backgraund-black-opacity: rgb(0, 0, 0, .5);
 }
 /* Общие стили */
@@ -9,22 +9,29 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
-a {
+a.link{
     color: var(--color-blue);
     text-decoration: none;
     transition: opaciyt 0.25 ease;
 }
-a:hover {
+a.link:hover {
     opacity: .8;
 }
 
+.block-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Header стили */
 .header{ 
     position: relative;
     height: 110vh;
     clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    bottom: 80px;
 }
 
 .header__backgraund{
@@ -46,39 +53,113 @@ a:hover {
 }
 
 .header-top {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 100px;
+    height: 80px;
 
     color: #fff;
     background-color: var(--backgraund-black-opacity);
 
-    z-index: 2;
+    z-index: 3;
 }
-.header-top a {
+
+.header-top a.link {
     color: #fff;
 }
-.header-top a.active {
+
+.logo{
+    width: 303px;
+    font-size: 28px;
+    color: #fff;
+
+}
+
+.element-menu__link.home {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.element-menu {
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.element-menu:last-child{
+    margin: 0;
+}
+
+.element-menu a.link.active, .element-menu a.link:hover{
     color: var(--color-blue);
     
 }
-.logo{
-    font-size: 40px;
-    color: #fff;
+.switcher-conteiner {
+    width: 303px;
 }
-.menu{
+.switcher {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 90px;
+    padding: 0px 10px;
+    height: 35px;
+    opacity: .9;
+
+    background: var(--color-blue);
+    border-radius: 25px;
+
+    transition: opacity .5s ease;
+    cursor: pointer;
 }
-.element-menu {
-    font-size: 20px;
-    margin-right: 15px;
+
+.switcher:hover {
+    opacity: 1;
 }
-.element-menu:last-child{
-    margin: 0;
+
+.switcher::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    background: #fff;
+    z-index: 1;
+
+    border-radius: 20px;
+    left: 42px;
+    transition: left .25s ease-in-out;
+}
+
+
+#lang:checked + .switcher::before {
+    left: 7px;
+}
+
+#lang:checked + .switcher span:first-child {
+    color: var(--color-blue);
+}
+
+#lang:checked + .switcher span:last-child {
+    color: #fff;
+}
+.switcher span {
+    flex: 1 1 50%;
+
+    text-align: center;
+    color: var(--color-blue);
+
+    transition: color .25s ease-in-out;
+    z-index: 2;
+}
+
+.switcher span:first-child {
+    color: #fff;
+}
+
+#lang{
+    display: none;
 }
 .header-center {
     position: relative;
@@ -101,11 +182,42 @@ a:hover {
     background-color: var(--backgraund-black-opacity);
 }
 .name{
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 56px;
+    line-height: 56px;
 }
 .description {
+    display: inline-block;
+    width: 62ch;
+
+    font-family: 'Courier New', Courier, monospace ;
     font-size: 24px;
+    white-space: nowrap;
+
+    border-right: 3px solid transparent;
+    overflow: hidden;
+
+
+    animation: cursor 0.75s 8 , print-text 5s steps(62);
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes print-text {
+    from {
+        width: 0;
+    }
 }
 
 

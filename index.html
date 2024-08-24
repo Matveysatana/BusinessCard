@@ -8,38 +8,53 @@
     <title>Сатановский Матвей Витальевич</title>
 </head>
 <body>
-    <header class="header">
+    <div class="header-top">
+        <a href="#home" class="logo link block-center">Матвей&nbsp;Сатановский</a>
+        <nav class="navigation">
+            <ul class="menu block-center">
+                <li class="element-menu block-center">
+                    <a class="element-menu__link active link home block-center" href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                          </svg>
+                          
+                    </a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#about-me">Обо&nbsp;мне</a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#achievements">Достижения</a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#skils">Навыки</a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#achievements">Интересы</a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#books">Книги</a>
+                </li>
+                <li class="element-menu block-center">
+                    <a class="element-menu__link link" href="#contact-me">Связаться</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="switcher-conteiner block-center">
+        <div class="switcher-wrapper">
+            <input type="checkbox" id="lang" checked>
+            <label class="switcher" for="lang">
+                <span>Ru</span> 
+                <span>Eng</span>
+            </label>
+        </div>
+        </div>
+    </div>
+    <header class="header" id="home">
         <img class="header__backgraund" src="./images/Фон-для-сайта3.jpg" alt="backgraund">
         <div class="header__backgraund-wrapper"></div>
-        <div class="header-top">
-            <a href="" class="logo">Матвей Сатановский</a>
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="element-menu">
-                        <a class="element-menu__link active" href="">Home</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">About me</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">Achievements</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">Skils</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">Interest</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">Books</a>
-                    </li>
-                    <li class="element-menu">
-                        <a class="element-menu__link" href="">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="switcher">Ru/Eng</div>
-        </div>
+
 
         <div class="header-center">
             <div class="header-center__wrapper">
@@ -49,7 +64,7 @@
         </div>
     </header>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="left">
             <img src="./images/Лучший_Мужчина.jpg" alt="Фотка автора">
         </div>
@@ -86,7 +101,7 @@
 
     </section>
 
-    <section class="achievements">
+    <section class="achievements" id="achievements">
         <h2 class="second-title">Достижения</h2>
         <ul class="achievements-list">
             <li class="achievements-list__element">Достижение 1</li>
@@ -97,7 +112,7 @@
         </ul>
     </section>
 
-    <section class="skils">
+    <section class="skils" id="skils">
         <h2 class="second-title">Навыки</h2>
             <p class="section-descriptions"></p>
                 <ul class="skills-filters">
@@ -135,7 +150,7 @@
         
     </section>
 
-    <section class="interest">
+    <section class="interest" id="interest">
         <h2 class="second-title">Интересы</h2>
         <div class="wrraper-interest">
             <img src="" alt="" class="interest-img">
@@ -169,7 +184,7 @@
         </div>
     </section>
 
-    <section class="books">
+    <section class="books" id="books">
         <h2 class="second-title">Прочитанные книги</h2>
 
         <p class="section-descriptions">Тут не все книги которые я прочиатл, а те которые больше всего мне понравились и я советую их прочитать! </p>
@@ -183,7 +198,7 @@
         </ul>
     </section>
     
-    <secton class="contact-me">
+    <secton class="contact-me" id="contact-me">
         <h2 class="second-title">Обратная связь</h2>
 
         <form action="" class="contact-me__form">
@@ -209,9 +224,9 @@
     <footer class="footer">
         <ul class="social">
             <li class="social-elements">
-                <a href="" class="social-elements__link">VK</a></li>
+                <a href="" class="social-elements__link link">VK</a></li>
             <li class="social-elements">
-                <a href="" class="social-elements__link">TG</a></li>
+                <a href="" class="social-elements__link link">TG</a></li>
         </ul>
         <p class="footer-about">
             &copy;&nbsp;Сатановский&nbsp;Матвей&nbsp;2010&nbsp;-&nbsp;2024
