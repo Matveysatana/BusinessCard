@@ -2,7 +2,6 @@
 /* Переменные */
 :root {
     --color-blue: rgb(86, 147, 238);
-<<<<<<< HEAD
     --text-color-gray: #9e9e9e;
     --text-color-light-gray: #e9e9e9;
     --text-color-black: #262626;
@@ -17,31 +16,20 @@ body {
 .checkbox {
     display: none;
 }
-=======
-    --backgraund-black-opacity: rgb(0, 0, 0, .5);
-    --text-color: #9e9e9e;
-    --text-color-black: #262626;
-
-    --backgraund-gray: rgb(225,225,225, .3);
-}
 /* Общие стили */
->>>>>>> be428764440544d93d6f77693e331fe852e29256
+
 * {
     margin: 0;
     padding: 0;
     list-style-type: none;
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD
+
 .svg_color {
     background-color: var(--color-blue);
 }
 a.link{
     fill: var(--color-blue);
-=======
-
-a.link{
->>>>>>> be428764440544d93d6f77693e331fe852e29256
     color: var(--color-blue);
     text-decoration: none;
     transition: opaciyt 0.25 ease;
@@ -50,13 +38,11 @@ a.link:hover {
     opacity: .8;
 }
 
-<<<<<<< HEAD
+
 .active{
     color: var(--color-blue);
 }
 
-=======
->>>>>>> be428764440544d93d6f77693e331fe852e29256
 .block-center {
     display: flex;
     align-items: center;
@@ -85,7 +71,7 @@ a.link:hover {
     background-color: var(--color-blue);
 }
 
-<<<<<<< HEAD
+
 .section-descriptions {
     margin-bottom: 40px;
     font-size: 18px;
@@ -93,8 +79,7 @@ a.link:hover {
 
     color: var(--text-color-gray);
 }
-=======
->>>>>>> be428764440544d93d6f77693e331fe852e29256
+
 .bold {
     font-weight: 700;
     color: var(--text-color-black);
@@ -103,7 +88,7 @@ a.link:hover {
 .section-grey {
     background-color: var(--backgraund-gray);
 }
-<<<<<<< HEAD
+
 
 .cls {
     clear: both;
@@ -178,9 +163,9 @@ a.link:hover {
 
 /* Header стили */
 
-=======
-/* Header стили */
->>>>>>> be428764440544d93d6f77693e331fe852e29256
+
+
+
 .header{ 
     position: relative;
     height: 110vh;
@@ -228,10 +213,8 @@ a.link:hover {
     width: 303px;
     font-size: 28px;
     color: #fff;
-<<<<<<< HEAD
     white-space: nowrap;
-=======
->>>>>>> be428764440544d93d6f77693e331fe852e29256
+
 
 }
 
@@ -382,7 +365,7 @@ a.link:hover {
 
 .about-me {
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .about-me .left {
@@ -408,19 +391,18 @@ a.link:hover {
 .about-me__description {
     font-size: 20px;
     margin-bottom: 20px;
-<<<<<<< HEAD
     color: var(--text-color-gray);
 }
 
 .about-me__extra {
     color: var(--text-color-gray);
-=======
+
     color: var(--text-color);
 }
 
 .about-me__extra {
     color: var(--text-color);
->>>>>>> be428764440544d93d6f77693e331fe852e29256
+
 }
 
 .about-me__extra-element {
@@ -431,21 +413,11 @@ a.link:hover {
 
 .about-me__extra-element:last-child {
     margin-bottom: 0px;
-}
-<<<<<<< HEAD
-.about-me__extra-icons, .width_height_svg{
-=======
-.about-me__extra-icons{
->>>>>>> be428764440544d93d6f77693e331fe852e29256
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> be428764440544d93d6f77693e331fe852e29256
 .about-me__extra-icons svg{
     color: var(--color-blue);
 }
@@ -455,11 +427,6 @@ a.link:hover {
     flex-direction: column;
     position: relative;
     padding: 40px 0px;
-<<<<<<< HEAD
-    margin-bottom: 80px;
-=======
->>>>>>> be428764440544d93d6f77693e331fe852e29256
-
 }
 
 .achievements::before,.achievements::after {
@@ -478,8 +445,6 @@ a.link:hover {
     border-top: 30px solid var(--backgraund-gray);
     bottom: -110px;
 }
-
-<<<<<<< HEAD
 
 /* Секция навыков */
 .skils{
@@ -611,19 +576,16 @@ a.link:hover {
 .slills-card__description {
     color: var(--text-color-gray);
     text-align: justify;
+}
 
 .achievements-list {
     display: flex;
 }
 
 
-
-
-
 /* Секция навыков */
 .skils{
     padding: 60px 0px;
->>>>>>> be428764440544d93d6f77693e331fe852e29256
 }
 
 /* Секция интересы */
@@ -668,7 +630,6 @@ a.link:hover {
 
 .interest-text {
     width: 360px;
-<<<<<<< HEAD
     color: var(--text-color-gray);
     margin-bottom: 20px;
     font-size: 16px;
@@ -830,23 +791,6 @@ a.link:hover {
 .footer-about {
     color: var(--text-color-gray);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
 .interest-text:last-of-type {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
->>>>>>> be428764440544d93d6f77693e331fe852e29256
