@@ -218,6 +218,9 @@ a.link:hover {
 
 }
 
+.element-menu__link {
+    font-weight: 500;
+}
 .element-menu__link.home {
     display: inline-block;
     width: 24px;
@@ -421,6 +424,18 @@ a.link:hover {
 .about-me__extra-icons svg{
     color: var(--color-blue);
 }
+.about-me__extra-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.width_height_svg {
+    width: 24px;
+    height: 24px;
+}
+
+
 /* Секция достижения */
 
 .achievements {

@@ -311,6 +311,10 @@
 
     /* About me  */
 
+    .about-me__description, .about-me__extra-element {
+        font-size: 14px;
+        max-width: 350px;
+    }
     .about-me {
         padding: 40px 0;
         flex-direction: column;
@@ -324,15 +328,16 @@
     }
     .about-me .right {
         padding: 10px 5px;
+ 
     }
     .about-me__title {
         font-size: 20px;
+        text-align: center;
     }
 
     .slider__images {
         max-width: 120px;
     }
-
     /* Skills  */
 
     .skills-wrraper .right {
