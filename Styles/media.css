@@ -1,0 +1,370 @@
+
+:root {
+    --color-blue: rgb(86, 147, 238);
+    --text-color-gray: #9e9e9e;
+    --text-color-light-gray: #e9e9e9;
+    --text-color-black: #262626;
+
+    --backgraund-black-opacity: rgb(0, 0, 0, .5);
+    --backgraund-gray: rgb(225,225,225, .3);
+}
+
+@media  screen and (max-width: 1200px) {
+    /* Menu */
+    .logo {
+        font-size: 28px;
+    }
+    .element-menu {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .element-menu__link.home {
+        width: 20px;
+        height: 20px;
+    }
+    .switcher-conteiner {
+        width: 200px;
+    }
+    /* About me  */
+    .about-me__images {
+        max-width: 300px;
+    }
+    .about-me__title {
+        font-size: 32px;
+    }
+    .about-me__description, .about-me__extra {
+        font-size: 18px;
+    }
+    .contact-me__form {
+        max-width: 95%;
+    }
+
+
+    /* Interest */
+    .interest-text {
+        width: 260px;
+    }
+
+    /* Общие  */
+    .slider__images {
+        max-width: 250px;
+    }
+}
+
+@media  screen and (max-width: 992px) {
+ /* menu  */
+    .logo {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .element-menu {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .element-menu__link.home {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* Header  */
+
+    .name {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .description {
+        width: 615px;
+        font-size: 16px;
+    }
+
+    /* About me  */
+
+    .about-me__title {
+        font-size: 23px;
+    }
+    .about-me__images {
+        max-width: 250px;
+    }
+    .about-me__description,.about-me__extra-element {
+        font-size: 14px;
+    }
+
+    /* skills */
+
+    .skills-wrraper {
+        width: 90%;
+    }
+
+    .skills-wrraper .left {
+        padding-right: 10px;
+        max-width: 60%;
+        gap: 10px;
+    }
+
+    .skills-list__row {
+        gap: 10px;
+    }
+
+    .skills-list__element  {
+        flex:  1 1 32%;
+        max-width: 32%;
+    }
+
+
+    .skills-list__element > *:first-child {
+        flex: 1 1 30%;
+    }
+
+    .skills-list__element > *:last-child {
+        flex:  1 1 60%;
+        font-size: 14px;
+    }
+
+    /* Interest  */
+
+    .interest {
+        padding: 40px 10px;
+    }
+
+    .interest__list {
+        gap: 10px;
+    }
+
+    .wrraper-interest {
+        margin-bottom: 10px;
+        width: 32%;
+    }
+
+    .interest-img {
+        height: 250px;
+    }
+
+    .interest-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .interest-text {
+        width: 230px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Общие */
+    .slider__images {
+        max-width: 230px;
+    }
+    .second-title {
+        font-size: 28px;
+    }
+}
+
+@media  screen and (mix-width: 769px) and  (max-width: 992px) {
+    /* Switcher  */
+
+    .switcher-conteiner {
+        width: 150px;
+    }
+    .switcher-wrapper{
+        width: 100px;
+    }
+    .switcher {
+        margin-left: 10px;
+        width: 70px;
+        font-size: 14px;
+    }
+    .switcher::before {
+        width: 28px;
+        height: 24px;
+        left: 34px;
+    }
+    #lang:checked + .switcher::before {
+        left:7px;
+    }
+}
+@media  screen and (max-width: 768px) {
+
+    /* Humburger */
+    .menu__humburger {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        width: 32px;
+        height: 26px;
+    
+        z-index: 4;
+    }
+    
+    .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--color-blue);
+    }
+    
+    .line1 {
+        transform-origin: 0 0;
+        transition: transform 0.4s ease-in-out;
+    }
+      
+    .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+      
+    .line3 {
+        transform-origin: 0 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    #humburger {
+        display: none;
+    }
+    
+    #humburger:checked ~ .header-top {
+        transform: translateX(0);
+    }
+      
+    #humburger:checked ~ .menu__humburger .line1 {
+        transform: rotate(45deg);
+    }
+      
+    #humburger:checked ~ .menu__humburger .line2 {
+        transform: scaleY(0);
+    }
+      
+    #humburger:checked ~ .menu__humburger .line3 {
+        transform: rotate(-45deg);
+    }
+
+    
+    .header-top {
+        position: fixed;
+        flex-direction: column;
+ 
+
+        width: 50%;
+        right: 0;
+        height: 100vh;
+
+        background: #000;
+        transform: translateX(100%);
+        transition: transform .5s ease;
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+
+    }
+
+
+    .navigation {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .element-menu__link.home {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Header  */
+    .header {
+        bottom: 0;
+    }
+    .name {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .description {
+        font-size: 16px;
+        width: 90%;
+        white-space: normal;
+        animation: none;
+    }
+    .description span {
+        white-space: nowrap;
+    }
+
+    /* About me  */
+
+    .about-me {
+        padding: 40px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .lef {
+        padding-right: 0;
+        margin-bottom: 20px;
+
+    }
+    .about-me .right {
+        padding: 10px 5px;
+    }
+    .about-me__title {
+        font-size: 20px;
+    }
+
+    .slider__images {
+        max-width: 120px;
+    }
+
+    /* Skills  */
+
+    .skills-wrraper .right {
+        display: none;
+    }
+
+    .skills-wrraper .left {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .skills-list__row {
+        flex-direction: column;
+    }
+
+    .skills-list__element {
+        width: 100%;
+        max-width: 100%;
+    }
+    .skills-list__element > *:first-child {
+        max-height: 90%;
+    }
+
+    /* Interest  */
+    .wrraper-interest {
+        width: 100%;
+    }
+    /* Обратная связь */
+
+    .wrapper-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

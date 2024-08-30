@@ -13,13 +13,18 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+.checkbox {
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
     list-style-type: none;
     scroll-behavior: smooth;
 }
-
+.svg_color {
+    background-color: var(--color-blue);
+}
 a.link{
     fill: var(--color-blue);
     color: var(--color-blue);
@@ -150,6 +155,7 @@ a.link:hover {
 }
 
 /* Header стили */
+
 .header{ 
     position: relative;
     height: 110vh;
@@ -197,6 +203,7 @@ a.link:hover {
     width: 303px;
     font-size: 28px;
     color: #fff;
+    white-space: nowrap;
 
 }
 
@@ -389,11 +396,12 @@ a.link:hover {
 .about-me__extra-element:last-child {
     margin-bottom: 0px;
 }
-.about-me__extra-icons{
+.about-me__extra-icons, .width_height_svg{
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
+
 
 .about-me__extra-icons svg{
     color: var(--color-blue);
@@ -602,6 +610,7 @@ a.link:hover {
     width: 360px;
     color: var(--text-color-gray);
     margin-bottom: 20px;
+    font-size: 16px;
 }
 .interest-text:last-of-type {
     margin-bottom: 0px;
@@ -610,7 +619,7 @@ a.link:hover {
 /*Секция книги */
 
 .books {
-    padding: 40px 0px 80px;
+    padding-top: 40px;
     position: relative;
     flex-direction: column;
 }
