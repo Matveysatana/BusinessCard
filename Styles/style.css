@@ -16,13 +16,11 @@ body {
 .checkbox {
     display: none;
 }
-/* Общие стили */
 
 * {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    scroll-behavior: smooth;
 }
 
 .svg_color {
@@ -164,7 +162,9 @@ a.link:hover {
 /* Header стили */
 
 
-
+.indent {
+    margin: 0px 20px;
+}
 
 .header{ 
     position: relative;
@@ -225,6 +225,7 @@ a.link:hover {
     display: inline-block;
     width: 24px;
     height: 24px;
+    margin-left: 20px;
 }
 
 .element-menu {
@@ -808,4 +809,10 @@ a.link:hover {
 }
 .interest-text:last-of-type {
     margin-bottom: 0;
+}
+
+/* Блог */
+
+#blog {
+    display: none;
 }

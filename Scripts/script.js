@@ -46,35 +46,33 @@ function hasClass(element, className) {
     return element.classList.contains(className);
 }
 
-// переключатель языков
-const translations = {
-    ru: {
-        home: 'Домой',
-        aboutMe: 'Обо мне',
-        achievements: 'Достижения',
-        skills: 'Навыки',
-        interest: 'Интересы',
-        books: 'Книги',
-        contactMe: 'Связаться'
-    },
-    en: {
-        home: 'Home',
-        aboutMe: 'About Me',
-        achievements: 'Achievements',
-        skills: 'Skills',
-        interest: 'Interests',
-        books: 'Books',
-        contactMe: 'Contact Me'
+
+// Блог
+
+function showContent(section) {
+
+    const sections = document.querySelectorAll('main > div, .header');
+    sections.forEach(sec => sec.style.display = 'none');
+
+    const activeSection = document.getElementById(section);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+    }
+
+    if (section === 'main' || section === 'home') {
+        document.querySelector('.header').style.display = 'block';
+        document.getElementById('main').style.display = 'block';
+    }
+    if (section === 'blog') {
+        document.getElementById('blog').style.display = 'block';
     }
 };
 
-document.getElementById('lang').addEventListener('change', function() {
-    const lang = this.checked ? 'en' : 'ru';
-    document.getElementById('menu-home').textContent = translations[lang].home;
-    document.getElementById('menu-about-me').textContent = translations[lang].aboutMe;
-    document.getElementById('menu-achievements').textContent = translations[lang].achievements;
-    document.getElementById('menu-skills').textContent = translations[lang].skills;
-    document.getElementById('menu-interest').textContent = translations[lang].interest;
-    document.getElementById('menu-books').textContent = translations[lang].books;
-    document.getElementById('menu-contact-me').textContent = translations[lang].contactMe;
-});
+function addActive () {
+   const linkBlog = document.getElementById("blog_link");
+
+    linkBlog.addEventListener('click', function() {
+    linkBlog.classList.add('active')
+   })
+}
+
