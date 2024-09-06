@@ -6,7 +6,7 @@ $(".element-menu__link").click (function () {
 
     $(".element-menu__link.active").removeClass('active');
     thisElement.addClass('active')
-})
+});
 
 
 
@@ -75,4 +75,9 @@ function addActive () {
     linkBlog.classList.add('active')
    })
 }
+
+
+
+
+// Фильтры навыков
 
