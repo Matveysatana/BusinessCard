@@ -1,12 +1,12 @@
-$(".element-menu__link").click (function () {
-    const thisElement = $(this);
+// $(".element-menu__link").click (function () {
+//     const thisElement = $(this);
 
-    const linkHref = thisElement.attr('href');
-    const hrefElement = $(linkHref);
+//     const linkHref = thisElement.attr('href');
+//     const hrefElement = $(linkHref);
 
-    $(".element-menu__link.active").removeClass('active');
-    thisElement.addClass('active')
-});
+//     $(".element-menu__link.active").removeClass('active');
+//     thisElement.addClass('active')
+// });
 
 
 
@@ -80,4 +80,43 @@ function addActive () {
 
 
 // Фильтры навыков
+document.querySelectorAll('.skil-filter').forEach(filter => {
+    filter.addEventListener('click', function() {
+        // Удаляем класс 'active' у всех фильтров
+        document.querySelectorAll('.skil-filter').forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+
+        const filterValue = this.getAttribute('data-filter'); // Получаем значение фильтра
+
+        document.querySelectorAll('.skills-list__element').forEach(item => {
+            if (filterValue === 'all') {
+                item.classList.remove('disactive'); // Показываем все
+            } else {
+                const category = item.getAttribute('data-category');
+                if (category === filterValue) {
+                    item.classList.remove('disactive'); // Показываем блок, если категория совпадает
+                } else {
+                    item.classList.add('disactive'); // Скрываем остальные блоки
+                }
+            }
+        });
+    });
+});
+
+// Описание справа от навыка
+
+document.querySelectorAll('.skills-list__element').forEach(element => {
+    element.addEventListener('click', () => {
+        const language = element.getAttribute('data-name_lengue');
+        document.querySelectorAll('.skills-card').forEach(card => {
+            if (card.getAttribute('data-description-lengue') === language) {
+                card.classList.add('active_block');
+                card.classList.remove('disacitve');
+            } else {
+                card.classList.add('disacitve');
+                card.classList.remove('active_block');
+            }
+        });
+    });
+});
 

@@ -1,0 +1,22 @@
+.achievements {
+    flex-direction: column;
+    position: relative;
+    padding: 40px 0px;
+}
+
+.achievements::before,.achievements::after {
+    content: "";
+    position: absolute;
+
+    border: 80px solid transparent;
+}
+
+.achievements::before{
+    border-top: 30px solid #fff;
+    top: 0;
+}
+
+.achievements::after{
+    border-top: 30px solid var(--backgraund-gray);
+    bottom: -110px;
+}

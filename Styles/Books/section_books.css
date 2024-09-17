@@ -1,0 +1,11 @@
+.books {
+    padding-top: 40px;
+    position: relative;
+    flex-direction: column;
+}
+
+.images__books {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}

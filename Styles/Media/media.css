@@ -345,6 +345,7 @@
     }
 
     .skills-wrraper .left {
+        flex-direction: column;
         width: 100%;
         max-width: 100%;
         padding-right: 0;
@@ -356,7 +357,7 @@
 
     .skills-list__element {
         width: 100%;
-        max-width: 100%;
+        min-width: 100%;
     }
     .skills-list__element > *:first-child {
         max-height: 90%;

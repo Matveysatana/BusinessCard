@@ -1,0 +1,113 @@
+
+.contact-me {
+    padding: 0 40px;
+}
+
+.contact-me__form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper-input {
+    display: inline-block;
+    width: 48%;
+}
+.wrapper-input.left {
+    float: left;
+}
+
+
+.wrapper-input.right {
+    float: right;
+}
+
+.wrapper-textarea {
+    margin-top: 20px;
+}
+
+.label {
+    position: relative;
+
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+
+.label::before {
+    content: "";
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+
+    margin-right: 8px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label[for="name"]::before{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(86, 147, 238)" class="size-6"><path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" /></svg>');
+
+}
+
+.label[for="e-mail"]::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(86, 147, 238)" class="size-6"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" /><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" /></svg>');
+}
+
+.label[for="message"]::before{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(86, 147, 238)" class="size-6"><path fill-rule="evenodd" d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z" clip-rule="evenodd" /></svg>');
+}
+
+.input, .textarea {
+    width: 100%;
+    border: none;
+    outline:1px solid var(--text-color-gray) ;
+}
+.input {
+    padding: 5px 5px 5px 20px;
+    max-width: 100%;
+    min-width: 100%;
+    height: 60px;
+
+}
+
+
+.textarea {
+    padding: 20px;
+}
+
+.input:focus , .textarea:focus {
+    outline:  1px solid var(--color-blue);
+}
+
+.submit {
+    display: block;
+    height: 45px;
+    margin-top: 20px;
+    padding: 10px 20px ;
+    margin-left: auto;
+
+    border: none;
+    background:var(--color-blue);
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+
+    cursor: pointer;
+    opacity: 0.8;
+    transition:  opacity .25s ease;
+}
+
+.submit:hover {
+    opacity: 1;
+}

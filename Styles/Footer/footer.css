@@ -1,0 +1,26 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; 
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+
+}
+
+.social-elements__link  {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-about {
+    color: var(--text-color-gray);
+}
+.interest-text:last-of-type {
+    margin-bottom: 0;
+}
