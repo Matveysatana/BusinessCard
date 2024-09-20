@@ -8,6 +8,14 @@
     --backgraund-black-opacity: rgb(0, 0, 0, .5);
     --backgraund-gray: rgb(225,225,225, .3);
 }
+@media  screen and (max-width: 1200px) {
+    .element-menu {
+        margin-right: 20px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+}
 
 @media  screen and (max-width: 1200px) {
     /* Menu */
@@ -39,6 +47,10 @@
         max-width: 95%;
     }
 
+
+    .skills-list__element {
+        font-size: 18px;
+    }
 
     /* Interest */
     .interest-text {
@@ -117,8 +129,8 @@
     }
 
     .skills-list__element > *:last-child {
-        flex:  1 1 60%;
-        font-size: 14px;
+        flex: 1 1 60%;
+        font-size: 20px;
     }
 
     /* Interest  */
@@ -191,8 +203,12 @@
     #lang:checked + .switcher::before {
         left:7px;
     }
+    
 }
 @media  screen and (max-width: 768px) {
+    .about-me__title {
+        font-size: 20px;
+    }
 
     /* Humburger */
     .menu__humburger {
@@ -238,6 +254,8 @@
     
     #humburger:checked ~ .header-top {
         transform: translateX(0);
+        opacity: 0.8;
+
     }
       
     #humburger:checked ~ .menu__humburger .line1 {
@@ -272,6 +290,7 @@
         width: 100%;
         text-align: center;
         white-space: normal;
+        font-size: 16px;
 
     }
 
@@ -367,10 +386,17 @@
     .wrraper-interest {
         width: 100%;
     }
+
+
+    .interest-text {
+        max-width: 315px;
+    }
     /* Обратная связь */
 
     .wrapper-input {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    
 }

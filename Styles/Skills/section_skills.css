@@ -52,7 +52,8 @@
     min-height: 80px;
     max-height: 80px;
     border-radius: 5px;
-
+    font-size: 24px;
+    
     transition: transform .25s ease;
     cursor: pointer;
 
@@ -72,9 +73,8 @@
 
 .skills-list__element > *:last-child{
     flex:1 1 70%;
-
     padding-left: 20px;
-    font-size: 24px;
+
 }
 
 .skills-wrraper .right {
